@@ -22,7 +22,7 @@ import java.util.UUID;
 public class User implements UserDetails {
     @Id
     @GeneratedValue
-    private UUID id;
+    private UUID userId;
     private String name;
     private String surname;
     private String email;

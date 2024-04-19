@@ -28,7 +28,7 @@ public class JWTTools {
                                         * 7))
                 .subject(
                         String.valueOf(
-                                user.getId()))
+                                user.getUserId()))
                 .signWith(
                         Keys.hmacShaKeyFor(secret.getBytes()))
                 .compact();
